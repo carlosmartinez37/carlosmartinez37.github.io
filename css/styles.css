@@ -21,7 +21,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #contenido {
-    
 }
 
 /*Inicio nota importante*/
@@ -47,8 +46,10 @@ h1,h2,h3,h4,h5,h6 {
 /*NOTA IMPORTANTE FIN*/
 
 #pie {
-     height: 200px;
-    background-color: chartreuse;
+     height: 25%;
+    background-color: #1fa345;
+    display: flex;
+    justify-content: space-between;
 }
 
 /*barra menu inicio*/
@@ -85,18 +86,17 @@ h1,h2,h3,h4,h5,h6 {
 }
 /*barra menu inicio*/
 
-/*Notas secundarias prueba*/
 
 #noticias {
-    height: 300px;
     width: 390px;
-    display: inline-block
+    display: inline-block;
+    height: 50%;
 }
 
 #noticias article {
     display: flex;
-    padding-bottom: 40px;
-    margin-bottom: 20px;
+    padding-bottom: 4px;
+    margin-bottom: 2px;
     border-bottom: 1px dotted lightgray;
 }
 .imagen-noticias {
@@ -123,6 +123,7 @@ h1,h2,h3,h4,h5,h6 {
 .cuerpo-noticias {
     padding-left: 20px;
     padding-right: 10px;
+    text-align: -webkit-center;
 }
 .flexible {
     display: flex;
@@ -130,5 +131,93 @@ h1,h2,h3,h4,h5,h6 {
 #noticia {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
+}
+#info {
+   width: 400px;
+   margin-top: 25px;
+}
+#info h2{
+    color: floralwhite;
+}
+#info a{
+    text-decoration: none;
+    color: floralwhite;
+}
+#parrafillo {
+    color: floralwhite;
+    text-align: center;
+}
+#redes-sociales {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.facebook, .twitter {
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    text-indent: -9999px;
+    transition: 0.5s;
+}
+
+.facebook {
+    background: url('../images/facebook_twitter.png') 0 0;
+}
+
+.twitter {
+    background: url('../images/facebook_twitter.png') -43px 0;
+}
+
+.facebook:hover {
+    background: url('../images/facebook_twitter.png') 0 -43px;
+}
+
+.twitter:hover {
+    background: url('../images/facebook_twitter.png') -43px -43px;
+}
+#copy {
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+}
+
+/*css prueba*/
+
+.btn-o {
+    max-width: 100%;
+    margin-top: 30px;
+}
+.btn {
+    position: relative;
+    height: 35px;
+    padding: 1px 8px 1px 6px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    background-color: #1b95e0;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.btn i {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: transparent 0 0 no-repeat;
+    background-image: url('../images/social-icons-t.png');
+}
+.btn-o, .count-o, .btn, .btn .label, #count {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+}
+.btn .label {
+    margin-left: 3px;
+    white-space: nowrap;
+}
+.btn .label b {
+    font-weight: 500;
+    white-space: nowrap;
 }
