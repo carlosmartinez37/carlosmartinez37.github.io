@@ -3,3 +3,132 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
 }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#encabezado {
+    height: 150px;
+    background: #1b1536;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+}
+#encabezado figure {
+    margin: 0;
+}
+
+#contenido {
+    
+}
+
+/*Inicio nota importante*/
+
+#nota-importante {
+   height: 600px;
+   margin: 20px 0;
+   width: 750px;
+   display: inline-block;    
+}
+
+#titulo-nota {
+    color: black;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+    margin: 42px 0 21px;
+}
+
+.img-principal {
+    box-shadow: 0 0 15px darkgray;
+}
+
+/*NOTA IMPORTANTE FIN*/
+
+#pie {
+     height: 200px;
+    background-color: chartreuse;
+}
+
+/*barra menu inicio*/
+#menu {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #1b1536;
+}
+#menu li {
+    list-style-type: none;
+    padding: 0;
+}
+#menu ul {
+    padding: 0;
+}
+#menu>ul>li {
+    display: inline-block;
+}
+#menu li a{
+    text-decoration: none;
+    color: yellow;
+}
+#menu>ul>li>a {
+    padding: 10px;
+    background-color: #1b1536;
+    transition: 0.5s;
+}
+#menu>ul>li>a:hover {
+    background-color:darkblue;
+}
+#menu li ul {
+    display: none;
+}
+/*barra menu inicio*/
+
+/*Notas secundarias prueba*/
+
+#noticias {
+    height: 300px;
+    width: 390px;
+    display: inline-block
+}
+
+#noticias article {
+    display: flex;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted lightgray;
+}
+.imagen-noticias {
+    position: relative;
+}
+.sombra-imagen {
+    box-shadow: 0px 0px 5px black;
+}
+.imagen-noticias span {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    padding: 3px 5px;
+    background-color: cornflowerblue;
+}
+
+.titulo-noticias {
+    font-size: 1.5em;
+    line-height: 0.9em;
+    font-variant: small-caps;
+    text-decoration: none;
+    color: #1fa345; 
+}
+.cuerpo-noticias {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.flexible {
+    display: flex;
+}
+#noticia {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
